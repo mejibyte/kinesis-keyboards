@@ -1,15 +1,19 @@
-[hk1]>[null]
-[hk2]>[null]
+* ---- Bottom layer ----
+* Left spacebar toggles to Fn layer
+[lspc]>[fnshf]
 [bspc]>[null]
 [caps]>[lwin]
 [lwin]>[caps]
-[lspc]>[fnshf]
-fn [bspc]>[null]
-fn [i]>[up]
+* ---- Fn layer ----
+fn [lspc]>[fnshf]
+* Swap CapsLock and Cmd (Windows key)
 fn [caps]>[lwin]
+fn [lwin]>[caps]
+* Arrow Keys
+fn [i]>[up]
 fn [j]>[lft]
 fn [k]>[dwn]
 fn [l]>[rght]
-fn [lwin]>[caps]
-fn [lspc]>[fnshf]
+* Disable backspace and use right spacebar instead
+fn [bspc]>[null]
 fn [rspc]>[bspc]

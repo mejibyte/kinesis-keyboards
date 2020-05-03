@@ -12,3 +12,7 @@ These are my settings and custom layouts.
 ## My Profiles
 
 * **Profile 1**: Work profile for Mac.
+
+## Writing changes to the keyboard
+
+Call `ruby write.rb`.
