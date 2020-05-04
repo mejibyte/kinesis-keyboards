@@ -15,11 +15,13 @@ fn [j]>[lft]
 fn [k]>[dwn]
 fn [l]>[rght]
 * Go to beginning of line
-fn {h}>{-lctrl}{a}{+lctrl}
-fn {lshft}{h}>{-lshft}{-lctrl}{a}{+lctrl}{+lshft}
+fn {h}>{x1}{-lctrl}{a}{+lctrl}
+fn {lshft}{h}>{x1}{-lshft}{-lctrl}{a}{+lctrl}{+lshft}
 * Go to end of line. Colon is semicolon (key right of L)
-fn {colon}>{-lctrl}{e}{+lctrl}
-fn {lshft}{colon}>{-lshft}{-lctrl}{e}{+lctrl}{+lshft}
+fn {colon}>{x1}{-lctrl}{e}{+lctrl}
+fn {lshft}{colon}>{x1}{-lshft}{-lctrl}{e}{+lctrl}{+lshft}
+* Del (delete character on right of cursor)
+fn [apos]>[del]
 * Switch tabs in Chrome and VS Code
 fn {u}>{x1}{-lwin}{-lalt}{lft}{+lwin}{+lalt}
 fn {o}>{x1}{-lwin}{-lalt}{rght}{+lwin}{+lalt}
