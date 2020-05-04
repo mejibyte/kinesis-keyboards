@@ -19,3 +19,5 @@ puts "Copying lighting..."
     f = "lighting/led#{i}.txt"
     run "cp #{File.join(__dir__, "data", f)} '#{File.join(keyboard, f)}'"
 end
+
+puts "Don't forget to press SmartSet + PROFILE to reload changes!"

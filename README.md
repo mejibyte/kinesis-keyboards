@@ -1,5 +1,6 @@
 # kinesis-freestyle-edge-rgb
-I have a Kinesis Freestyle Edge RGB keyboard, which is frankly the best keyboard I have ever owned.
+I have a Kinesis Freestyle Edge RGB keyboard, which is frankly the best keyboard
+I have ever owned.
 
 These are my settings and custom layouts.
 
@@ -16,3 +17,8 @@ These are my settings and custom layouts.
 ## Writing changes to the keyboard
 
 Call `ruby write.rb`.
+
+## TODO
+
+* Instead of editing `layoutX.txt` directly, create a small "compiler" so I can
+  write my layout in a nicer syntax and make it portable for other keyboards.

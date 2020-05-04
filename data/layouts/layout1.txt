@@ -14,6 +14,19 @@ fn [i]>[up]
 fn [j]>[lft]
 fn [k]>[dwn]
 fn [l]>[rght]
+* Go to beginning of line
+fn {h}>{-lctrl}{a}{+lctrl}
+fn {lshft}{h}>{-lshft}{-lctrl}{a}{+lctrl}{+lshft}
+* Go to end of line. Colon is semicolon (key right of L)
+fn {colon}>{-lctrl}{e}{+lctrl}
+fn {lshft}{colon}>{-lshft}{-lctrl}{e}{+lctrl}{+lshft}
+* Switch tabs in Chrome and VS Code
+fn {u}>{x1}{-lwin}{-lalt}{lft}{+lwin}{+lalt}
+fn {o}>{x1}{-lwin}{-lalt}{rght}{+lwin}{+lalt}
 * Disable backspace and use right spacebar instead
 fn [bspc]>[null]
 fn [rspc]>[bspc]
+* Change to most recently used app (Cmd + Tab) on Mac
+fn {a}>{x1}{-lwin}{tab}{+lwin}
+* Toggle Search in Contexts app (to switch windows)
+fn {q}>{x1}{-hyper}{q}{+hyper}
