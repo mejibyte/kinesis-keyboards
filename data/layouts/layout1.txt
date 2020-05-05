@@ -1,7 +1,8 @@
 * ---- Bottom layer ----
 * Left spacebar toggles to Fn layer
 [lspc]>[fnshf]
-[bspc]>[null]
+* TODO: Disable backspace again when I have more time to deal with muscle memory.
+* [bspc]>[null]
 [caps]>[lwin]
 [lwin]>[caps]
 * ---- Fn layer ----
@@ -28,7 +29,8 @@ fn [apos]>[del]
 fn {u}>{x1}{-lwin}{-lalt}{lft}{+lwin}{+lalt}
 fn {o}>{x1}{-lwin}{-lalt}{rght}{+lwin}{+lalt}
 * Disable backspace and use right spacebar instead
-fn [bspc]>[null]
+* TODO: Disable backspace again when I have more time to deal with muscle memory.
+* fn [bspc]>[null]
 fn [rspc]>[bspc]
 * Change to most recently used app (Cmd + Tab) on Mac
 fn {a}>{x1}{-lwin}{tab}{+lwin}
