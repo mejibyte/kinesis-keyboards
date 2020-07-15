@@ -18,7 +18,7 @@ TODO
 * Enabling/disabling the V-drive: `progrm + F1`
 * Choosing a layout: `progrm + <layout letter>`
 * Never ever use `progrm + F3-F7`! These are designed to fuck everything up and will make you go crazy reconfiguring everything.
-* Toggling Power User Mode: `progm + shift + esc`). I want it on.
+* Toggling Power User Mode: `progm + shift + esc`. I want it on. It should already be on.
 
 ## My layouts
 
