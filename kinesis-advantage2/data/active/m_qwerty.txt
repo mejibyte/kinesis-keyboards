@@ -1,0 +1,48 @@
+[scroll]>[shutdn]
+[kp=]>[kp=mac]
+[lctrl]>[lwin]
+[kp-lctrl]>[kp-lwin]
+[rctrl]>[rwin]
+[kp-rctrl]>[kp-rwin]
+[rwin]>[rctrl]
+[kp-rwin]>[kp-rctrl]
+
+* My changes start here.
+
+* Backspace switches layer.
+[bspace]>[kpshift]
+[kp-bspace]>[kpshift]
+
+* Second layer
+* Space becomes backspace
+[kp0]>[bspace]
+
+* Arrow Keys
+[kp8]>[up]
+[kp4]>[left]
+[kp5]>[down]
+[kp6]>[right]
+
+* Go to beginning of line
+{kp-H}>{-lctrl}{a}{+lctrl}
+* Do not release lshft at the end ({+lshft}) so that I can chain it with more movements.
+*{kp-lshift}{H}>{-lshift}{-lctrl}{a}{+lctrl}{+lshift}
+{lshift}{H}>{a}{a}{a}
+
+* Go to end of line. Colon is semicolon (key right of L)
+*fn {colon}>{x1}{-lctrl}{e}{+lctrl}
+* Do not release lshft at the end ({+lshft}) so that I can chain it with more movements.
+*fn {lshft}{colon}>{x1}{-lshft}{-lctrl}{e}{+lctrl}
+* Del (delete character on right of cursor)
+*fn [apos]>[del]
+* Switch tabs in Chrome and VS Code
+*fn {u}>{x1}{-lwin}{-lalt}{lft}{+lwin}{+lalt}
+*fn {o}>{x1}{-lwin}{-lalt}{rght}{+lwin}{+lalt}
+* Disable backspace and use right spacebar instead
+* TODO: Disable backspace again when I have more time to deal with muscle memory.
+* fn [bspc]>[null]
+*fn [rspc]>[bspc]
+* Change to most recently used app (Cmd + Tab) on Mac
+{kp-A}>{-lwin}{tab}{+lwin}
+* Toggle Search in Contexts app (to switch windows). Hyper = Windows + Ctrl + Alt + Shift
+{kp-Q}>{-lwin}{-lctrl}{-lalt}{-lshift}{q}{+lwin}{+lctrl}{+lalt}{+lshift}
