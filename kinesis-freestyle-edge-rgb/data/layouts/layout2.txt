@@ -1,0 +1,38 @@
+* ---- Bottom layer ----
+* Left spacebar toggles to Fn layer
+[lspc]>[fnshf]
+* TODO: Disable backspace again when I have more time to deal with muscle memory.
+* [bspc]>[null]
+[caps]>[lctrl]
+[lctrl]>[caps]
+* ---- Fn layer ----
+fn [lspc]>[fnshf]
+* Swap CapsLock and Cmd (Windows key)
+fn [caps]>[lctrl]
+fn [lctrl]>[caps]
+* Arrow Keys
+fn [i]>[up]
+fn [j]>[lft]
+fn [k]>[dwn]
+fn [l]>[rght]
+* Go to beginning of line
+fn {h}>{x1}{home}
+* Do not release lshft at the end ({+lshft}) so that I can chain it with more movements.
+fn {lshft}{h}>{x1}{-lshft}{home}
+* Go to end of line. Colon is the key to the right of L.
+fn {colon}>{x1}{end}
+* Do not release lshft at the end ({+lshft}) so that I can chain it with more movements.
+fn {lshft}{colon}>{x1}{-lshft}{end}
+* Del (delete character on right of cursor)
+fn [apos]>[del]
+* Switch tabs in Chrome and VS Code
+fn {u}>{x1}{-lctrl}{pup}{+lctrl}
+fn {o}>{x1}{-lctrl}{pdn}{+lctrl}
+* Disable backspace and use right spacebar instead
+* TODO: Disable backspace again when I have more time to deal with muscle memory.
+* fn [bspc]>[null]
+fn [rspc]>[bspc]
+* Change to most recently used app (Cmd + Tab) on Mac
+fn {a}>{x1}{-lalt}{tab}{+lalt}
+* Toggle Search in Contexts app (to switch windows)
+fn {q}>{x1}{-hyper}{q}{+hyper}

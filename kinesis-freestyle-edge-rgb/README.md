@@ -13,10 +13,13 @@ These are my settings and custom layouts.
 ## My Profiles
 
 * **Profile 1**: Work profile for Mac.
+* **Profile 2**: Work profile for Linux.
+* **Profile 3**: Gaming profile for Windows.
 
 ## Writing changes to the keyboard
 
-Call `ruby write.rb`.
+* Press "SmartSet + F8" to enable V-Drive.
+* Run `ruby write.rb`.
 
 ## TODO
 

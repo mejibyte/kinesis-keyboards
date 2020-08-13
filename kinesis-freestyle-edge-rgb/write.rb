@@ -3,7 +3,11 @@ def run(cmd)
     `#{cmd}`
 end
 
-keyboard = "/Volumes/FS EDGE RGB/"
+keyboard = "/Volumes/FS EDGE RGB/" # Mac OS
+if `uname -s` =~ /Linux/
+    keyboard = "/media/mejibyte/FS EDGE RGB/"
+end
+
 if !Dir.exists?(keyboard)
     raise "#{keyboard} doesn't exist. Are you sure V-Drive is active?"
 end
