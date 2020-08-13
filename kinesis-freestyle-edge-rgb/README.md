@@ -16,6 +16,15 @@ These are my settings and custom layouts.
 * **Profile 2**: Work profile for Linux.
 * **Profile 3**: Gaming profile for Windows.
 
+
+### Mac
+
+* Don't forget to install https://contexts.co/
+
+### Linux
+
+* Don't forget to install https://extensions.gnome.org/extension/973/switcher/
+
 ## Writing changes to the keyboard
 
 * Press "SmartSet + F8" to enable V-Drive.
