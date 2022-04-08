@@ -3,13 +3,16 @@ def run(cmd)
     `#{cmd}`
 end
 
-keyboard = "/Volumes/FS EDGE RGB/" # Mac OS
-if `uname -s` =~ /Linux/
-    keyboard = "/media/mejibyte/FS EDGE RGB/"
-end
 
-if !Dir.exists?(keyboard)
-    raise "#{keyboard} doesn't exist. Are you sure V-Drive is active?"
+possible_locations = [
+    "/Volumes/FS EDGE RGB/", # Mac OS,
+    "/media/mejibyte/FS EDGE RGB/", # Ubuntu, I think?
+    "/run/media/mejibyte/FS EDGE RGB/", # Arch Linux
+]
+
+keyboard = possible_locations.find{ |path| Dir.exists?(path) }
+if keyboard.nil?
+    raise "Are you sure V-Drive is active? None of these locations exist: #{possible_locations}"
 end
 
 puts "Copying layouts..."
