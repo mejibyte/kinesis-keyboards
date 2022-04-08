@@ -1,12 +1,16 @@
 * ---- Bottom layer ----
-* Left spacebar toggles to Fn layer
-[lspc]>[fnshf]
+* Right spacebar toggles to Fn layer
+[rspc]>[fnshf]
 * TODO: Disable backspace again when I have more time to deal with muscle memory.
 * [bspc]>[null]
 [caps]>[lctrl]
 [lctrl]>[caps]
 * ---- Fn layer ----
-fn [lspc]>[fnshf]
+fn [rspc]>[fnshf]
+* Disable backspace and use left spacebar instead
+* TODO: Disable backspace again when I have more time to deal with muscle memory.
+* fn [bspc]>[null]
+fn [lspc]>[bspc]
 * Swap CapsLock and Cmd (Windows key)
 fn [caps]>[lctrl]
 fn [lctrl]>[caps]
@@ -28,10 +32,7 @@ fn [apos]>[del]
 * Switch tabs in Chrome and VS Code
 fn {u}>{x1}{-lctrl}{pup}{+lctrl}
 fn {o}>{x1}{-lctrl}{pdn}{+lctrl}
-* Disable backspace and use right spacebar instead
-* TODO: Disable backspace again when I have more time to deal with muscle memory.
-* fn [bspc]>[null]
-fn [rspc]>[bspc]
+
 * Change to most recently used app (Cmd + Tab) on Mac
 fn {a}>{x1}{-lalt}{tab}{+lalt}
 * Toggle Search in Contexts app (to switch windows)
